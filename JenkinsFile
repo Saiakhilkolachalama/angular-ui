@@ -17,6 +17,7 @@ pipeline {
                 sh 'npm run deploy'
                 sh 'aws s3 sync dist/angular-demo/ s3://s3forjenkinsbuild123'
             }
+            
         }
     }
 }
